@@ -1,0 +1,377 @@
+/* ==========================
+   SHIMMER ANIMATION
+========================== */
+
+@keyframes shimmerMove{
+
+    0%{
+
+        left:-150%;
+    }
+
+    100%{
+
+        left:150%;
+    }
+}
+
+/* ==========================
+   PULSE EFFECT
+========================== */
+
+@keyframes pulse{
+
+    0%{
+
+        opacity:.5;
+    }
+
+    50%{
+
+        opacity:1;
+    }
+
+    100%{
+
+        opacity:.5;
+    }
+}
+
+.skeleton-line,
+.avatar,
+.price,
+.buy-btn,
+.dash-box,
+.table-row{
+
+    animation:
+    pulse 2s ease-in-out infinite;
+}
+
+/* ==========================
+   FLOATING BLOBS
+========================== */
+
+@keyframes floatBlob{
+
+    0%{
+
+        transform:
+        translateY(0px)
+        translateX(0px);
+    }
+
+    50%{
+
+        transform:
+        translateY(-25px)
+        translateX(15px);
+    }
+
+    100%{
+
+        transform:
+        translateY(0px)
+        translateX(0px);
+    }
+}
+
+.blur1{
+
+    animation:
+    floatBlob
+    10s
+    infinite
+    ease-in-out;
+}
+
+.blur2{
+
+    animation:
+    floatBlob
+    12s
+    infinite
+    ease-in-out;
+}
+
+.blur3{
+
+    animation:
+    floatBlob
+    14s
+    infinite
+    ease-in-out;
+}
+
+/* ==========================
+   BUTTON HOVER
+========================== */
+
+.primary-btn,
+.secondary-btn,
+#themeBtn{
+
+    transition:
+    all .3s ease;
+}
+
+.primary-btn:hover{
+
+    transform:
+    translateY(-4px)
+    scale(1.03);
+
+    box-shadow:
+    0 15px 35px
+    rgba(
+    139,
+    92,
+    246,
+    .35
+    );
+}
+
+.secondary-btn:hover{
+
+    transform:
+    translateY(-4px);
+
+    background:
+    rgba(
+    255,
+    255,
+    255,
+    .10
+    );
+}
+
+/* ==========================
+   CARD ENTRY ANIMATION
+========================== */
+
+@keyframes fadeUp{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+        translateY(40px);
+    }
+
+    100%{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+    }
+}
+
+.skeleton-card,
+.youtube-skeleton,
+.product-skeleton,
+.dashboard-skeleton,
+.feature-card{
+
+    animation:
+    fadeUp .8s ease;
+}
+
+/* ==========================
+   WAVE LOADING EFFECT
+========================== */
+
+@keyframes wave{
+
+    0%{
+
+        transform:
+        translateX(-100%);
+    }
+
+    100%{
+
+        transform:
+        translateX(300%);
+    }
+}
+
+.skeleton-image::after,
+.product-image::after,
+.yt-thumbnail::after,
+.dashboard-chart::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:40%;
+
+    height:100%;
+
+    background:
+    linear-gradient(
+    90deg,
+    transparent,
+    rgba(
+    255,
+    255,
+    255,
+    .15
+    ),
+    transparent
+    );
+
+    animation:
+    wave 2.2s infinite;
+}
+
+/* ==========================
+   NEON GLOW EFFECT
+========================== */
+
+.stat-card:hover{
+
+    box-shadow:
+    0 0 20px
+    rgba(
+    139,
+    92,
+    246,
+    .4
+    ),
+    0 0 40px
+    rgba(
+    139,
+    92,
+    246,
+    .2
+    );
+
+    transition:.3s;
+}
+
+/* ==========================
+   FLOATING CARDS
+========================== */
+
+@keyframes floating{
+
+    0%{
+
+        transform:
+        translateY(0px);
+    }
+
+    50%{
+
+        transform:
+        translateY(-8px);
+    }
+
+    100%{
+
+        transform:
+        translateY(0px);
+    }
+}
+
+.skeleton-card:nth-child(1){
+
+    animation:
+    floating 5s infinite ease-in-out;
+}
+
+.skeleton-card:nth-child(2){
+
+    animation:
+    floating 6s infinite ease-in-out;
+}
+
+.skeleton-card:nth-child(3){
+
+    animation:
+    floating 7s infinite ease-in-out;
+}
+
+/* ==========================
+   HERO TITLE GLOW
+========================== */
+
+.hero h2{
+
+    text-shadow:
+    0 0 20px
+    rgba(
+    139,
+    92,
+    246,
+    .4
+    );
+}
+
+/* ==========================
+   FEATURE CARD HOVER
+========================== */
+
+.feature-card:hover{
+
+    box-shadow:
+    0 20px 40px
+    rgba(
+    0,
+    0,
+    0,
+    .35
+    );
+
+    border-color:
+    rgba(
+    139,
+    92,
+    246,
+    .35
+    );
+}
+
+/* ==========================
+   PREMIUM BUTTON CLICK
+========================== */
+
+.primary-btn:active,
+.secondary-btn:active,
+#themeBtn:active{
+
+    transform:
+    scale(.95);
+}
+
+/* ==========================
+   SMOOTH PAGE LOAD
+========================== */
+
+body{
+
+    animation:
+    fadePage
+    .8s ease;
+}
+
+@keyframes fadePage{
+
+    from{
+
+        opacity:0;
+    }
+
+    to{
+
+        opacity:1;
+    }
+}
+
