@@ -21,8 +21,6 @@ A collection of **5 modern skeleton loaders** built using **HTML & CSS**, inspir
 - 🛒 Amazon Skeleton
 - 📱 Social Post Skeleton
 - 📰 Medium Article Skeleton
-- ✨ 5 Unique Animations
-- 🎨 Pure HTML & CSS
 
 ---
 
