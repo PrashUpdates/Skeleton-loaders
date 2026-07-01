@@ -12,4 +12,4 @@ A beautiful collection of animated skeleton loaders inspired by modern applicati
 
 ---
 
-⭐ If you like this project, don't forget to **Star** the repository!
+### ⭐ If you like this project, don't forget to **Star** the repository!
